@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Candid</title>
+  </head>
+  <body>
+    <my-title></my-title>
+    <my-counter></my-counter>
+    <web-import href="https://raw.githubusercontent.com/danieldietrich/--candid-web-import-2/main/components/my-title.html"></web-import>
+    <web-import href="components/my-counter.html"></web-import>
+    <script type="module">
+      import candid from "./candid.es.js";
+      window.addEventListener('load', () => candid());
+    </script>
+  </body>
+</html>
